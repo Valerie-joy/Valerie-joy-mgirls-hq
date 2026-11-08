@@ -1,0 +1,2 @@
+# Netlify: send every path to the SPA so deep links such as /directory/:slug work.
+/*  /index.html  200

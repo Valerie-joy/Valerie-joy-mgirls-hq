@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" data-theme="paper">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="MGirls HQ — the headquarters for women who are already moving. A directory of women-owned businesses and a launch studio for the ones about to be." />
+    <meta name="theme-color" content="#000000" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="MGirls HQ" />
+    <meta property="og:description" content="The headquarters for women who are already moving." />
+    <!-- TODO: replace with a real 1200x630 share image once brand photography exists. -->
+    <meta property="og:image" content="/og-image.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;1,6..96,400&family=Archivo:wght@300;400;500;600&family=Archivo+Narrow:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>MGirls HQ</title>
+    <script>
+      // Set the theme before first paint so the page never flashes the wrong one.
+      try {
+        var stored = localStorage.getItem('mgirlshq-theme');
+        if (stored === 'paper' || stored === 'ink') {
+          document.documentElement.dataset.theme = stored;
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.dataset.theme = 'ink';
+        }
+      } catch (e) {
+        /* private mode or blocked storage: keep the default */
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

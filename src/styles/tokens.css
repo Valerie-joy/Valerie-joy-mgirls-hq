@@ -1,0 +1,60 @@
+/**
+ * MGirls HQ — design tokens.
+ *
+ * This file is the single source of truth for every colour, space step and
+ * radius on the site. It mirrors `tokens.json` in the published design system.
+ * Change a value here and the whole site follows; nothing else hard-codes a
+ * colour or a pixel gap.
+ *
+ * Themes: Paper (default) and Ink. `data-theme` on <html> selects one.
+ */
+
+:root,
+:root[data-theme='paper'] {
+  color-scheme: light;
+
+  --surface: #ffffff;
+  --surface-raised: #f4f4f3;
+  --surface-inverse: #000000;
+  --ink: #000000;
+  --ink-muted: #5c5c5e;
+  --ink-inverse: #ffffff;
+  --rule: #d4d4d6;
+  --rule-control: #6e6e70;
+  --rule-strong: #000000;
+  --focus: #000000;
+  --focus-inverse: #ffffff;
+  --overlay: rgba(0, 0, 0, 0.55);
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 128px;
+
+  --radius-none: 0px;
+  --radius-xs: 2px;
+  --radius-circle: 50%;
+}
+
+:root[data-theme='ink'] {
+  color-scheme: dark;
+
+  --surface: #0a0a0a;
+  --surface-raised: #161617;
+  --surface-inverse: #ffffff;
+  --ink: #ffffff;
+  --ink-muted: #a8a8ab;
+  --ink-inverse: #000000;
+  --rule: #2e2e31;
+  --rule-control: #8a8a8d;
+  --rule-strong: #ffffff;
+  --focus: #ffffff;
+  --focus-inverse: #000000;
+  --overlay: rgba(0, 0, 0, 0.65);
+}
