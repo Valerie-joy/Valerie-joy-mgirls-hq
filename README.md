@@ -190,4 +190,5 @@ Before launch: run Lighthouse on mobile, target 90+, and keep LCP under 2.5s onc
 - [ ] Put a link to this site in the @mgirlshq Instagram bio, and add an MGirls HQ block to the founder's link-in-bio
 - [ ] Audit every footer and social link — each one must resolve
 - [ ] Add a real 1200×630 Open Graph image at `public/og-image.png`
+- [ ] **Allow indexing:** remove the `<meta name="robots">` tag from `index.html` and switch `public/robots.txt` from `Disallow: /` to the launch block inside it
 - [ ] Run Lighthouse on mobile and check both themes on a real phone

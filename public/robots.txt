@@ -1,0 +1,12 @@
+# PRE-LAUNCH: the site is placeholder content (DEMO members, unconfirmed
+# pricing, placeholder policies), so it is kept out of search entirely.
+#
+# AT LAUNCH: delete the two lines below, replace them with the block that
+# follows, and remove the <meta name="robots"> tag from index.html.
+User-agent: *
+Disallow: /
+
+# At launch, use this instead:
+# User-agent: *
+# Allow: /
+# Sitemap: https://valerie-joy-mgirls-hq.vercel.app/sitemap.xml
