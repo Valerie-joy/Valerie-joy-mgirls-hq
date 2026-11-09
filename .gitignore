@@ -12,3 +12,6 @@ Thumbs.db
 *.log
 tsconfig.tsbuildinfo
 *.tsbuildinfo
+
+# Internal strategy docs - kept locally, never published
+docs/
